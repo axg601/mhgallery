@@ -1,41 +1,45 @@
 <script>
-	import { page } from '$app/stores';
 	import logo from '$lib/images/sfu-logo.svg';
-	import github from '$lib/images/github.svg';
+	import banner from '$lib/images/banner.jpg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
-
-	<nav style="width: 100%;">
-		<div style="padding-top: 2rem; width: 100%">
-			<h1>
-				WRIT-102: WRITING ABOUT MEDICINE
-			</h1>
-			<div style="display: flex; width: 100%; justify-content: end; font-size:large">
-				<a href="/">
-					Gallery
-				</a>
-				<a href="/about">
-					About
-				</a>
-				<a href="https://www.francis.edu">
-					SFU
+	<div class="navcontainer">
+		<nav style="width: 40%; margin: auto">
+			<div class="corner">
+				<a href="https://www.francis.edu/">
+					<img style="z-index: 50" src={logo} alt="SvelteKit" />
 				</a>
 			</div>
+			<div style="padding-top: 2rem; width: 100%">
+				<h1>
+					Saint Francis University WRIT-102: Writing About Medicine
+				</h1>
+				<div style="display: flex; width: 100%; justify-content: end; font-size:large">
+					<a href="/">
+						Gallery
+					</a>
+					<a href="/about">
+						About
+					</a>
+					<a href="https://www.francis.edu">
+						SFU
+					</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<section style="" class="container">
+		<img src={banner} alt="Class visit on 9/20/24" class="banner" />
+		<div class="overlay">
+			<h1 class="overlaytext">Therapeutic Garden Support Project Gallery</h1>
+			<h2 class="overlaytext">Fall 2024 WRIT-102: Writing About Medicine</h2>
 		</div>
-	</nav>
+	</section>
 </header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: space-between;
-		background-color: rgb(165, 11, 0);
+	nav {
 		padding: 0 8rem 0 8rem;
 	}
 
@@ -51,19 +55,42 @@
 		text-decoration: none;
 		padding: 0 1rem;
 	}
-	
-	nav a {
-		/* display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear; */
+	h1 {
+		font-size: 3.2rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+
+	.navcontainer {
+		background-color: rgb(155, 11, 1);
+		width: 100%; 
+		display: flex; 
+		justify-content: space-between; 
+		margin: auto;
+	}
+
+	.container {
+    	position: relative;
+	}	
+	.overlay {
+		position: absolute;
+		top: 25%;
+		left: 10%;
+		width: 100%;
+	}
+
+	.overlaytext {
+		color: white;
+		text-align: left;
+		margin: 0%;
+	}
+
+	.banner {
+		max-width: 100%;
+		padding-bottom: 3rem;
+		z-index: 0;
+		position: relative;
 	}
 
 	.corner {
@@ -89,47 +116,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
-	}
-
-	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		list-style: none;
-		background: var(--background);
-		background-size: contain;
-	}
-
-	li {
-		position: relative;
-		height: 100%;
-	}
-
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
 	}
 
 </style>

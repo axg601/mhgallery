@@ -5,7 +5,7 @@
 
 <header>
 	<div class="navcontainer">
-		<nav style="width: 40%; margin: auto">
+		<nav style="width: 60%; margin: auto">
 			<div class="corner">
 				<a href="https://www.francis.edu/">
 					<img style="z-index: 50" src={logo} alt="SvelteKit" />

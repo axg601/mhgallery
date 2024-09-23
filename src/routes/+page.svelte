@@ -9,22 +9,22 @@
 <main>
 	<section class="gallery" style="width: 66%; margin: auto;">
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 		<div class="item">
-			content
+			Picture Slot
 		</div>
 	</section>
 </main>
@@ -36,7 +36,7 @@
 		gap: 1rem;
 	}
 	.item {
-		background-color: green;
+		background-color: gray;
 		border: 1px solid black;
 	}
 </style>

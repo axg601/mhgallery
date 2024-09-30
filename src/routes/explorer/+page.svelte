@@ -5,7 +5,7 @@
     import "@egjs/svelte-view360/css/view360.min.css";
     
     const projection = new EquirectProjection({
-      src: "/src/lib/images/pano2.jpg"
+      src: "/src/lib/images/pano.jpg"
     });
     </script>
 
@@ -19,7 +19,7 @@
 	<section class="explorer" style="">
         <View360 class="is-16by9" projection={projection} gyro={true} autoplay={true} />
 	</section>
-    <p>This explorer was built using <a href="">View360</a>, a 360° panorama image / video viewer.</p>
+    <p>This explorer was built using <a href="https://naver.github.io/egjs-view360/">View360</a>, a 360° panorama image / video viewer.</p>
 </main>
 
 <style>

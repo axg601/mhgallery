@@ -3,7 +3,7 @@
 
     import View360, { EquirectProjection } from "@egjs/svelte-view360";
     import "@egjs/svelte-view360/css/view360.min.css";
-    import panoImage from '$lib/images/pano.jpg';
+    import panoImage from '$lib/images/pano2.jpg';
 
     const projection = new EquirectProjection({
         src: panoImage 

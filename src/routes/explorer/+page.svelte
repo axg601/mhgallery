@@ -4,8 +4,10 @@
     import View360, { EquirectProjection } from "@egjs/svelte-view360";
     import "@egjs/svelte-view360/css/view360.min.css";
     
+    const imagePath = `${import.meta.env.BASE_URL}src/lib/images/pano.jpg`;
+
     const projection = new EquirectProjection({
-      src: "/src/lib/images/pano.jpg"
+      src: imagePath
     });
     </script>
 

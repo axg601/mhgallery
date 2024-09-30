@@ -1,5 +1,6 @@
 <script>
 	import Header from './Header.svelte';
+	import linkedIn from '$lib/images/linkedin.png'
 	import '../app.css';
 </script>
 
@@ -10,7 +11,8 @@
 	</main>
 
 	<footer>
-		<!-- <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p> -->
+		<p>Built by Ashton George <a href="https://www.linkedin.com/in/ashton-george-160619240/"><img class="social" src={linkedIn} alt="LinkedIn"/></a> 
+			& Kevin Suresh <a href="https://www.linkedin.com/in/kevititussureshtennisplayer/"><img class="social" src={linkedIn} alt="LinkedIn"/></a></p>
 	</footer>
 </div>
 
@@ -19,6 +21,10 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+	}
+
+	.social {
+		width: 1em;
 	}
 
 	main {

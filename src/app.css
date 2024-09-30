@@ -93,3 +93,28 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+
+.bricolage-grotesque-small {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+.bricolage-grotesque-medium {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+.bricolage-grotesque-large {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}

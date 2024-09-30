@@ -4,7 +4,7 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this site</h1>
+	<h1 class="bricolage-grotesque-large">About this site</h1>
 
 	<p>
 		This site is a showcase of student work from WRIT-102: Writing About Medicine at Saint Francis University.
@@ -20,3 +20,9 @@
 	<pre>npm create svelte@latest</pre>
 
 </div>
+
+<style>
+	div {
+		padding: 1rem;
+	}
+</style>

@@ -3,13 +3,12 @@
 
     import View360, { EquirectProjection } from "@egjs/svelte-view360";
     import "@egjs/svelte-view360/css/view360.min.css";
-    
-    const imagePath = `${import.meta.env.BASE_URL}src/lib/images/pano.jpg`;
+    import panoImage from '$lib/images/pano.jpg';
 
     const projection = new EquirectProjection({
-      src: imagePath
+        src: panoImage 
     });
-    </script>
+</script>
 
 <svelte:head>
 	<title>Explorer</title>

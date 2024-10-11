@@ -18,7 +18,7 @@
 <main>
     <h2 class="bricolage-grotesque-medium">Check out the pavilion explorer below</h2>
 	<section class="explorer" style="">
-        <View360 class="is-16by9" projection={projection} gyro={true} autoplay={true} />
+        <View360 class="is-16by9" projection={projection} gyro={true} autoplay={true}  />
 	</section>
     <p>This explorer was built using <a href="https://naver.github.io/egjs-view360/">View360</a>, a 360° panorama image / video viewer.</p>
 </main>

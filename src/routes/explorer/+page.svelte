@@ -3,10 +3,10 @@
 
     import View360, { EquirectProjection } from "@egjs/svelte-view360";
     import "@egjs/svelte-view360/css/view360.min.css";
-    import corner from '$lib/images/corner.JPG';
-    import door from '$lib/images/door.JPG';
-    import parking from '$lib/images/parking.JPG';
-    import pavilion from '$lib/images/pavilion.JPG';
+    import corner from '$lib/images/corner.jpg';
+    import door from '$lib/images/door.jpg';
+    import parking from '$lib/images/parking.jpg';
+    import pavilion from '$lib/images/pavilion.jpg';
 
     const cornerProjection = new EquirectProjection({
         src: corner

@@ -5,6 +5,7 @@
 	import awells from '$lib/images/awells.jpeg';
 	import mgolden from '$lib/images/mgolden.jpg';
 	import oclark from '$lib/images/oclark.jpg';
+	import jcariaso from '$lib/images/jcariaso.jpeg';
 </script>
 
 <svelte:head>
@@ -37,6 +38,10 @@
 		<div class="itemcontainer bricolage-grotesque-small">
 			<img src={mgolden} alt="" class="item">
 			<p>Alyssa Giovinazzo and Mary Golden's painted pots.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={jcariaso} alt="" class="item">
+			<p>Joaquim Cariaso's decorated gourds.</p>
 		</div>
 	</section>
 </main>

@@ -1,5 +1,10 @@
 <script>
 	import sstophel from '$lib/images/sstophel.jpeg';
+	import mluger from '$lib/images/mluger.jpeg';
+	import hmeyers from '$lib/images/hmyers.png';
+	import awells from '$lib/images/awells.jpeg';
+	import mgolden from '$lib/images/mgolden.jpg';
+	import oclark from '$lib/images/oclark.jpg';
 </script>
 
 <svelte:head>
@@ -10,8 +15,28 @@
 <main>
 	<section class="gallery" style="">
 		<div class="itemcontainer bricolage-grotesque-small">
-			<img src={sstophel} alt="Sophie Stophel and Sierra Crum" class="item">
+			<img src={sstophel} alt="" class="item">
 			<p>Sophie Stophel and Sierra Crum making suncatchers.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={mluger} alt="" class="item">
+			<p>Austin Bender and Mali Luger's gnome garden.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small landscape" style="">
+			<img src={hmeyers} alt="" class="item">
+			<p>Hunter Myers and Caden Schenk's bench.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={awells} alt="" class="item">
+			<p>Aubrie Wells and Olivia Clark's sea urchin shell medusae.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={oclark} alt="" class="item">
+			<p>Aubrie Wells and Olivia Clark's medusae hung in the pavilion.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={mgolden} alt="" class="item">
+			<p>Alyssa Giovinazzo and Mary Golden's painted pots.</p>
 		</div>
 	</section>
 </main>
@@ -35,11 +60,17 @@
 		border-radius: 1rem;
 		width: 100%;
 	}
+	.landscape {
+		grid-column: span 2;
+	}
 	@media (max-width: 768px) {
 		.gallery {
 			grid-template-columns: 100%;
 			padding-top: 1rem;
 			width: 90%;
+		}
+		.landscape {
+			grid-column: span 1;
 		}
 	}
 </style>

@@ -1,4 +1,5 @@
 <script>
+	import sstophel from '$lib/images/sstophel.jpeg';
 </script>
 
 <svelte:head>
@@ -8,23 +9,9 @@
 
 <main>
 	<section class="gallery" style="">
-		<div class="item">
-			Picture Slot
-		</div>
-		<div class="item">
-			Picture Slot
-		</div>
-		<div class="item">
-			Picture Slot
-		</div>
-		<div class="item">
-			Picture Slot
-		</div>
-		<div class="item">
-			Picture Slot
-		</div>
-		<div class="item">
-			Picture Slot
+		<div class="itemcontainer bricolage-grotesque-small">
+			<img src={sstophel} alt="Sophie Stophel and Sierra Crum" class="item">
+			<p>Sophie Stophel and Sierra Crum making suncatchers.</p>
 		</div>
 	</section>
 </main>
@@ -37,9 +24,16 @@
 		width: 66%; 
 		margin: auto;
 	}
+	.itemcontainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 1.2rem;
+	}
 	.item {
-		background-color: gray;
-		border: 1px solid black;
+		border-radius: 1rem;
+		width: 100%;
 	}
 	@media (max-width: 768px) {
 		.gallery {

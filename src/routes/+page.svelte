@@ -6,6 +6,7 @@
 	import mgolden from '$lib/images/mgolden.jpg';
 	import oclark from '$lib/images/oclark.jpg';
 	import jcariaso from '$lib/images/jcariaso.jpeg';
+	import aprince from '$lib/images/aprince.jpg';
 </script>
 
 <svelte:head>
@@ -42,6 +43,10 @@
 		<div class="itemcontainer bricolage-grotesque-small">
 			<img src={jcariaso} alt="" class="item">
 			<p>Joaquim Cariaso's decorated gourds.</p>
+		</div>
+		<div class="itemcontainer bricolage-grotesque-small landscape" style="">
+			<img src={aprince} alt="" class="item">
+			<p>Alyssa Irwin and Ava Prince's re-stained Veg Trug #2.</p>
 		</div>
 	</section>
 </main>
